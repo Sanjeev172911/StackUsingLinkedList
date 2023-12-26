@@ -19,5 +19,22 @@ public class Stack<T> {
         }
     }
 
+    public T peak(){
+        if(head==null){
+            System.out.println("Stack is empty");
+            return null;
+        }
+
+        return head.data;
+    }
+
+    public void pop(){
+        if(head==null) {
+            System.out.println("Stack is empty.");
+        }
+
+        head=head.next;
+    }
+
 
 }

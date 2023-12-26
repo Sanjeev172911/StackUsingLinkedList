@@ -6,5 +6,11 @@ public class StackTest {
         stack.push(30);
         stack.push(70);
 
+        System.out.println("Top of stack is :"+stack.peak());
+
+        while(!stack.isEmpty()){
+            System.out.println("Top of stack is :"+stack.peak());
+            stack.pop();
+        }
     }
 }
